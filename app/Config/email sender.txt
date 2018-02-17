@@ -1,0 +1,33 @@
+if ($this->request->is('post')) {
+
+				$message=$this->request->data['Booking']['contact_cod_address'];
+			//sending email...
+				App::uses('CakeEmail', 'Network/Email');
+				$Email = new CakeEmail(array('username'=>'sender email address'));
+				$Email->config('smtp'); 
+				$Email->emailFormat("html");
+				//$Email->username('bamgbosemorayo@gmail.com');
+
+				$Email->from(array($this->Auth->user('email') => $this->Auth->user('first_name').' '.$this->Auth->user('last_name'))); 
+			 	$Email->to($this->request->data['Booking']['to']); 
+				$Email->subject($this->request->data['Booking']['subject']);
+			    $Email->send($message);
+
+			
+		}
+
+
+//Email config
+public $smtp = array(
+		'transport' => 'Smtp',
+		
+		'host' => 'ssl://smtp.gmail.com',
+		'port' => 465,
+		'timeout' => 30,
+		'username' => 'deji@bus.com.ng',
+		'password' => 'coldfire2326',
+		'client' => null,
+		'log' => false,
+		//'charset' => 'utf-8',
+		//'headerCharset' => 'utf-8',
+	);

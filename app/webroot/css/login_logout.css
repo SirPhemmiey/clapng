@@ -1,0 +1,38 @@
+.form .input-error { border-color: #f35b3f; }
+button.btn {
+  background-color: #347c17  !important;
+  border-color: #347c17  !important;
+  color: #fff !important;
+}
+button.btn:hover{
+  background-color: #347c17  !important;
+  border-color: #347c17  !important;
+  color: #fff  !important;
+  opacity: 0.6  !important;
+}
+
+body{
+margin-top: 30px;
+margin-bottom: 50px;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.panel-default {
+opacity: .9;
+/*margin-top:-50px;*/
+}
+.form-group.last { margin-bottom:0px; }
+#auth{
+  text-align: center;
+}
+.container{
+  margin-left: 10%;
+}
+.col-md-7{
+  margin-top:90px; 
+}
+h1#h1{
+  margin-left:30px;
+}
