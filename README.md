@@ -9,3 +9,6 @@ An Web Application for the Copyright Association of Nigeria (COSON) that generat
 [Interswitch](https://www.interswitchgroup.com/) - Payment Gateway
 
 [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+
+[jQuery](http://www.jquery.com) - A fast, small, and feature-rich JavaScript library
+
